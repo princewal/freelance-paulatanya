@@ -1,0 +1,113 @@
+@use "variable" as *;
+@use "menu" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-background-color;
+  font-family: $body-font;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $body-color;
+  line-height: 1.45;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header-font;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+picture,
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25px 25px 25px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 10px 50px 50px 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 10px 100px 50px 100px;
+  }
+}
+
+.content {
+  margin-top: 60px;
+  padding: 20px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  height: 100vh;
+
+  .hero-text {
+    flex: 1;
+    padding-right: 20px;
+
+    hgroup {
+      max-width: 426px;
+      > * {
+        padding: 10px 0px;
+      }
+    }
+  }
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.main-book {
+  .main-book-image {
+    max-width: 413px;
+    margin: 0 auto;
+  }
+  > div {
+    padding: 20px 0;
+  }
+}

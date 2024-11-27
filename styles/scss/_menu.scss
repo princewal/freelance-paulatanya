@@ -1,0 +1,63 @@
+@use "variable" as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $primary-background-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  .logo {
+    color: #0a0a0a;
+    font-family: $header-font;
+    font-size: 24px;
+    font-weight: 200;
+
+    span:first-child {
+      font-weight: bold;
+    }
+    span:nth-child(2) {
+      color: gray;
+    }
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+      color: inherit;
+    }
+  }
+}
+
+.two-col-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    flex-flow: row nowrap;
+    & > div:first-child {
+      flex: 1 1 50%;
+    }
+    & > div:nth-child(2) {
+      flex: 1 1 50%;
+    }
+  }
+}
