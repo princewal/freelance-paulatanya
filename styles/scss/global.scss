@@ -28,7 +28,7 @@ h3 {
   font-family: $header-font;
   font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 picture,
@@ -49,6 +49,11 @@ img {
   display: block;
   max-width: 100%;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
 }
 
 .container {
@@ -66,10 +71,51 @@ img {
   }
 }
 
+.btn {
+  display: inline-block;
+  background-color: $btn-bg-color;
+  color: $btn-text-color;
+  font-family: $body-font;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 20px;
+  margin-top: 15px;
+
+  &.btn-arrow {
+    position: relative;
+    padding-right: 35px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 53%;
+      right: 5px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 8px;
+      background: url(./images/btn-arrow-white.svg) no-repeat center center /
+        contain;
+    }
+  }
+}
+
 .content {
   margin-top: 60px;
   padding: 20px;
 }
+
+.wavy-underline {
+  position: relative;
+  &:after {
+    content: "";
+    background: url(./images/wavy-line.svg) no-repeat center / contain;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 46px;
+    height: 5px;
+  }
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -109,5 +155,29 @@ img {
   }
   > div {
     padding: 20px 0;
+  }
+}
+
+header {
+  > * {
+    padding: 10px 5px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  cite {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: $gray;
+  }
+}
+
+.book-header {
+  .synopsis {
+    color: $gray;
   }
 }
