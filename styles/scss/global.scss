@@ -1,5 +1,6 @@
 @use "variable" as *;
 @use "menu" as *;
+@use "modifiers" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
@@ -41,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 picture,
@@ -56,8 +57,12 @@ a {
   font-family: inherit;
 }
 
+section {
+  padding: 20px 0;
+}
+
 .container {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 10px 25px 25px 25px;
@@ -67,7 +72,7 @@ a {
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding: 10px 100px 50px 100px;
+    padding: 10px 75px 50px 75px;
   }
 }
 
@@ -80,15 +85,16 @@ a {
   font-size: 16px;
   padding: 8px 20px;
   margin-top: 15px;
+  transition: all 0.3s ease;
 
   &.btn-arrow {
     position: relative;
-    padding-right: 35px;
+    padding-right: 55px;
     &:after {
       content: "";
       position: absolute;
       top: 53%;
-      right: 5px;
+      right: 15px;
       transform: translateY(-50%);
       width: 24px;
       height: 8px;
@@ -96,11 +102,14 @@ a {
         contain;
     }
   }
+
+  &:hover {
+    box-shadow: 0 0 12px $btn-bg-color;
+  }
 }
 
 .content {
-  margin-top: 60px;
-  padding: 20px;
+  margin-top: 50px;
 }
 
 .wavy-underline {
@@ -130,6 +139,7 @@ a {
 
     hgroup {
       max-width: 426px;
+      margin: 0 auto;
       > * {
         padding: 10px 0px;
       }
@@ -168,6 +178,9 @@ header {
     font-weight: 700;
     text-transform: uppercase;
   }
+  h3 {
+    font-weight: 300;
+  }
   cite {
     font-size: 13px;
     font-weight: 300;
@@ -179,5 +192,14 @@ header {
 .book-header {
   .synopsis {
     color: $gray;
+  }
+  footer {
+    padding-top: 25px;
+  }
+}
+
+#about-me {
+  header > * {
+    display: inline-block;
   }
 }
