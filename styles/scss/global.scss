@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 25px;
+}
+
 body {
   background-color: $primary-background-color;
   font-family: $body-font;
@@ -225,6 +230,33 @@ header {
     color: $gray;
     p {
       padding: 5px 0;
+    }
+  }
+}
+
+#other-development {
+  background: $primary-background-shade;
+
+  .swiper {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+  }
+}
+
+footer {
+  padding: 50px;
+  .logo {
+    color: #0a0a0a;
+    font-family: $header-font;
+    font-size: 14px;
+    font-weight: 200;
+
+    span:first-child {
+      font-weight: bold;
+    }
+    span:nth-child(2) {
+      color: gray;
     }
   }
 }

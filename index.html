@@ -5,24 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paul Atanya</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <header class="navbar" role="banner">
-        <div class="logo" aria-label="Company Logo">
+        <div class="logo" aria-label="Paul Atanya">
           <span>PAUL</span><span>ATANYA</span>
         </div>
         <nav aria-label="Main Navigation">
           <ul class="menu">
-            <li><a href="#" aria-label="Home">Home</a></li>
-            <li><a href="#" aria-label="About">About</a></li>
-            <li><a href="#" aria-label="Services">Services</a></li>
-            <li><a href="#" aria-label="Contact">Contact</a></li>
+            <li><a href="#home" aria-label="Home">Home</a></li>
+            <li><a href="#book-section" aria-label="About">Book</a></li>
+            <li><a href="#about-me" aria-label="Services">About</a></li>
+            <li><a href="#visit-me" aria-label="Contact">Visit me</a></li>
+            <li>
+              <a href="#other-development" aria-label="Contact">Development</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main class="content" role="main">
-        <section class="hero" aria-label="Hero Section">
+        <section id="home" class="hero" aria-label="Hero Section">
           <div class="hero-text">
             <hgroup>
               <h1>Life of Helping</h1>
@@ -140,9 +148,55 @@
             </div>
           </div>
         </section>
-      </main>
-    </div>
+        <section id="other-development" class="text-align-center">
+          <header>
+            <h2 id="aboutme" class="wavy-underline">OTHER INTERESTS</h2>
 
+            <h3 id="about-me-subtitle" class="">AFRICAN DEVELOPMENT</h3>
+          </header>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./images/african-development/village.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/african-development/village-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/african-development/van-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/african-development/school.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="text-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis optio tempore ut, cumque possimus ea obcaecati ducimus
+              quia ipsa vel, ab, voluptates tempora quam saepe. Illo possimus
+              corrupti nisi ducimus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              neque maxime esse eaque nobis, fuga atque consequatur modi animi
+              minus tempora quas laborum doloremque! Laboriosam?
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="logo" aria-label="Paul Atanya">
+          <span>PAUL</span><span>ATANYA</span>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
