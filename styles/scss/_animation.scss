@@ -1,0 +1,15 @@
+.fadein-animation {
+  animation: fadeInAnimation both;
+  animation-timeline: view(75% 10%);
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(150px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
