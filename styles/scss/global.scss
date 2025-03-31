@@ -63,6 +63,7 @@ img {
 a {
   text-decoration: none;
   font-family: inherit;
+  font-weight: bold;
 }
 
 section {
@@ -179,6 +180,31 @@ section {
       height: auto;
     }
   }
+
+  &.south-sudan {
+    padding: 0;
+    .hero-text {
+      background-image: url(./images/african-development/teachers-1.jpg);
+      background-size: cover;
+      background-blend-mode: lighten;
+      height: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+
+      hgroup {
+        max-width: 626px;
+        text-align: center;
+
+        background: rgb(0, 0, 0);
+        background: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+    }
+  }
 }
 
 .main-book {
@@ -260,4 +286,8 @@ footer {
       color: gray;
     }
   }
+}
+
+.swiper-slide {
+  aspect-ratio: 16 / 9;
 }
