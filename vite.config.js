@@ -19,5 +19,6 @@ export default defineConfig({
       assetsDir: "assets",
     },
     cssCodeSplit: false,
+    assetsInlineLimit: 0,
   },
 });

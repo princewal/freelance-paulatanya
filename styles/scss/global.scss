@@ -123,7 +123,7 @@ section {
       transform: translateY(-50%);
       width: 24px;
       height: 8px;
-      background: url(./images/btn-arrow-white.svg) no-repeat center center /
+      background: url(/images/btn-arrow-white.svg) no-repeat center center /
         contain;
     }
   }
@@ -152,7 +152,7 @@ section {
   position: relative;
   &:after {
     content: "";
-    background: url(./images/wavy-line.svg) no-repeat center / contain;
+    background: url(/images/wavy-line.svg) no-repeat center / contain;
     position: absolute;
     bottom: 5px;
     left: 50%;
@@ -438,7 +438,7 @@ footer {
 
   &:after {
     content: "";
-    background: url(./images/wavy-line.svg) repeat-x center / contain;
+    background: url(/images/wavy-line.svg) repeat-x center / contain;
     position: absolute;
     bottom: 0px;
     left: 50%;
