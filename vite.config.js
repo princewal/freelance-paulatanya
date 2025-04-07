@@ -14,6 +14,7 @@ export default defineConfig({
         "south-sudan": path.resolve(__dirname, "south-sudan.html"),
         book: path.resolve(__dirname, "book.html"),
         testimonial: path.resolve(__dirname, "testimonial.html"),
+        about: path.resolve(__dirname, "about.html"),
       },
       outDir: "dist",
       assetsDir: "assets",
