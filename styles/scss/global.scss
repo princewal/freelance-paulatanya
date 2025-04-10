@@ -73,7 +73,8 @@ section {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 25px 25px 25px;
+  padding: 10px 10px 25px 10px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-breakpoint) {
     padding: 10px 50px 50px 50px;
@@ -138,13 +139,17 @@ section {
 // }
 
 .text-content {
-  padding: 25px 20px 0 20px;
-  width: min(90%, 850px);
+  padding: 25px 10px 0 10px;
+  width: min(100%, 850px);
   margin: 0 auto;
   p:nth-child(n + 1) {
     padding-block: 10px;
     letter-spacing: 0.02rem;
     line-height: 1.55;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 25px 20px 0 20px;
   }
 }
 
@@ -164,15 +169,15 @@ section {
 
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 20px;
+  padding: 20px 20px;
   background-color: $primary-background-shade;
-  height: 100vh;
+  height: 80vh;
 
   .hero-text {
-    flex: 1;
-    padding-right: 20px;
+    flex: 0 1 auto;
 
     hgroup {
       max-width: 426px;
@@ -183,14 +188,17 @@ section {
     }
   }
   .hero-image {
-    flex: 1;
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 0;
 
     img {
+      max-height: 100%;
+      width: auto;
       max-width: 100%;
-      height: auto;
+      object-fit: contain;
     }
   }
 
@@ -261,6 +269,18 @@ section {
         );
         z-index: 11;
       }
+    }
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    height: 100vh;
+    padding: 60px 20px;
+
+    .hero-text {
+      flex: 1;
+    }
+    .hero-image {
+      flex: 1;
     }
   }
 }

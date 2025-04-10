@@ -8,14 +8,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 
   .logo {
     color: #0a0a0a;
     font-family: $header-font;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 200;
 
     span:first-child {
@@ -27,20 +27,120 @@
   }
 
   .menu {
+    background-color: $primary-background-color;
     list-style: none;
     display: flex;
+    flex-flow: column wrap;
     margin: 0;
     padding: 0;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transition: left 0.7s ease;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0;
 
     li {
-      margin-left: 20px;
+      margin-left: 0;
+      padding-block: 20px;
     }
 
     a {
       text-decoration: none;
-      font-size: 14px;
+      font-size: 24px;
+      font-weight: 500;
       transition: color 0.3s;
       color: inherit;
+    }
+  }
+
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .line {
+      fill: none;
+      stroke: black;
+      stroke-width: 6;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &.line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+      &.line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+      }
+      &.line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+    }
+  }
+  @media screen and (min-width: $menu-breakpoint) {
+    padding: 10px 20px;
+    .logo {
+      font-size: 24px;
+    }
+    .menu {
+      position: static;
+      left: 0;
+      top: auto;
+      flex-flow: row nowrap;
+      height: auto;
+      width: auto;
+      padding: 0;
+      li {
+        margin-left: 20px;
+        padding-block: 0;
+      }
+      a {
+        font-size: 14px;
+        line-height: 1.45;
+      }
+    }
+
+    .menu-button {
+      display: none;
+    }
+  }
+}
+
+/* Responsive menu button */
+.navbar.opened {
+  .menu-button {
+    .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+    .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+    }
+    .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+  }
+
+  @media screen and (max-width: $menu-breakpoint) {
+    .menu {
+      left: 0;
+      width: 100%;
     }
   }
 }

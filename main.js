@@ -11,3 +11,10 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const menuButton = document.querySelector(".menu-button");
+const navbar = document.querySelector(".navbar");
+menuButton.addEventListener("click", () => {
+  navbar.classList.toggle("opened");
+  this.setAttribute("aria-expanded", navbar.classList.contains("opened"));
+});
