@@ -72,6 +72,13 @@
   text-align: left;
 }
 
+.text-align-center-left {
+  text-align: center;
+  @media screen and (min-width: $tablet-breakpoint) {
+    text-align: left;
+  }
+}
+
 .inline-break {
   &::before {
     content: "\A";
