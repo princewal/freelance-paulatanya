@@ -414,6 +414,7 @@ footer {
 
 .blockquote {
   padding-left: 2rem;
+  padding-block: 20px;
   position: relative;
   overflow: hidden;
   width: 80%;
@@ -449,6 +450,9 @@ footer {
 
   p + p {
     margin-top: 1rem;
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-block: 0;
   }
 }
 
