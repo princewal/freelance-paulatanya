@@ -2,8 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Learn the story behind 'Destination Canada' by Paul Atanya — a practical guide to help new Canadians thrive in their new home."
+    />
+    <meta
+      name="keywords"
+      content="Paul Atanya, Destination Canada, Canadian immigration, success for new Canadians, immigrant guidebook"
+    />
+    <meta name="author" content="Paul Atanya" />
+    <link rel="canonical" href="https://www.paulatanya.com/book" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Destination Canada by Paul Atanya" />
+    <meta
+      property="og:description"
+      content="A must-read for newcomers to Canada. Learn the tools and insights needed to succeed from an experienced advisor."
+    />
+    <meta property="og:image" content="/images/main-book.png" />
+    <meta property="og:url" content="https://www.paulatanya.com/book" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Destination Canada by Paul Atanya" />
+    <meta
+      name="twitter:description"
+      content="A practical guide to success for new Canadians by Paul Atanya."
+    />
+    <meta name="twitter:image" content="/images/main-book.png" />
     <title>Paul Atanya</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
@@ -21,18 +51,26 @@
   <body>
     <div class="container">
       <header class="navbar" role="banner">
-        <div class="logo" aria-label="Paul Atanya">
+        <div class="logo" aria-label="Paul Atanya lolgo">
           <a href="/"><span>PAUL</span><span>ATANYA</span></a>
         </div>
         <nav aria-label="Main Navigation">
           <ul class="menu">
-            <li><a href="/" aria-label="Home">Home</a></li>
-            <li><a href="/book" aria-label="About">Book</a></li>
-            <li><a href="/testimonial" aria-label="About">Testimonial</a></li>
-            <li><a href="/about" aria-label="Services">About</a></li>
-            <li><a href="/#visit-me" aria-label="Contact">Visit me</a></li>
+            <li><a href="/" aria-label="Go to Home page">Home</a></li>
+            <li><a href="/book" aria-current="page">Book</a></li>
             <li>
-              <a href="/#other-development" aria-label="Contact">Passion</a>
+              <a href="/testimonial" aria-label="View testimonials"
+                >Testimonial</a
+              >
+            </li>
+            <li><a href="/about" aria-label="Learn about Paul">About</a></li>
+            <li>
+              <a href="/#visit-me" aria-label="How to visit Paul">Visit Me</a>
+            </li>
+            <li>
+              <a href="/#other-development" aria-label="Paul's passion project"
+                >Passion</a
+              >
             </li>
           </ul>
           <button class="menu-button" onclick="" aria-label="Main Menu">
@@ -51,20 +89,33 @@
         </nav>
       </header>
       <main class="content no-margin-top" role="main">
-        <section class="hero book no-padding" aria-label="Hero Section">
+        <section
+          class="hero book no-padding"
+          aria-labelledby="book-hero-heading"
+        >
           <div class="hero-text text-align-center">
             <hgroup>
-              <h1 class="wavy-underline">DESTINATION CANADA ORIGIN STORY</h1>
+              <h1 id="book-hero-heading" class="wavy-underline">
+                DESTINATION CANADA ORIGIN STORY
+              </h1>
               <p>How this book came into origin</p>
             </hgroup>
           </div>
         </section>
-        <section>
+        <section aria-labelledby="book-story-heading">
           <div class="text-content">
+            <header>
+              <h2 id="book-story-heading" class="wavy-underline">
+                THE STORY BEHIND THE BOOK
+              </h2>
+            </header>
             <p>
               Hello Reader: <br />
               I have a story to tell you. It is a personal story for writing
-              <a href="https://a.co/d/h30Y65M" target="_blank"
+              <a
+                href="https://a.co/d/h30Y65M"
+                target="_blank"
+                rel="noopener noreferrer"
                 >DESTINATION CANADA: Tools for Succes</a
               >. This story is about success: a story of Canada and immigrants
               destined for Canada. I am an immigrant like you. I came to Canada
@@ -143,9 +194,29 @@
           </div>
         </section>
       </main>
-      <footer class="gray-background">
-        <div class="logo" aria-label="Paul Atanya">
-          <span>PAUL</span><span>ATANYA</span>
+      <footer class="gray-background site-footer" role="contentinfo">
+        <div class="logo" aria-label="Paul Atanya footer logo">
+          <span>PAUL</span><span>ATANYA</span
+          ><span class="copyright">&copy; 2025 All Rights Reserved</span>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/paulatanya"
+            target="_blank"
+            aria-label="LinkedIn profile of Paul Atanya"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/linkedin.svg" height="32" alt="Linkedin Icon" />
+          </a>
+          <a
+            href="https://x.com/atanya_paul?s=11"
+            height="32"
+            target="_blank"
+            aria-label="Paul Atanya on X (formerly Twitter)"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/x.svg" alt="X formerly Twitter Icon" />
+          </a>
         </div>
       </footer>
     </div>

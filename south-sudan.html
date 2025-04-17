@@ -2,9 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paul Atanya</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Paul Atanya shares updates on his volunteer-led project to support schools and teachers in South Sudan through bottle drives and donations."
+    />
+    <meta
+      name="keywords"
+      content="Paul Atanya, South Sudan, humanitarian project, school building, volunteer work, bottle drive, African education"
+    />
+    <meta name="author" content="Paul Atanya" />
+    <link rel="canonical" href="https://www.paulatanya.com/south-sudan" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="South Sudan School Project | Paul Atanya"
+    />
+    <meta
+      property="og:description"
+      content="Follow Paul Atanya’s mission to help schools and teachers in South Sudan. Learn how you can support the cause."
+    />
+    <meta
+      property="og:image"
+      content="/images/african-development/teachers-1.jpg"
+    />
+    <meta property="og:url" content="https://www.paulatanya.com/south-sudan" />
+    <meta property="og:type" content="article" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Destination Canada by Paul Atanya" />
+    <meta
+      name="twitter:description"
+      content="A practical guide to success for new Canadians by Paul Atanya."
+    />
+    <meta name="twitter:image" content="/images/main-book.png" />
+    <title>South Sudan School Project | Paul Atanya's Humanitarian Work</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
       rel="stylesheet"
@@ -21,18 +57,26 @@
   <body>
     <div class="container">
       <header class="navbar" role="banner">
-        <div class="logo" aria-label="Paul Atanya">
+        <div class="logo" aria-label="Paul Atanya logo">
           <a href="/"><span>PAUL</span><span>ATANYA</span></a>
         </div>
         <nav aria-label="Main Navigation">
           <ul class="menu">
-            <li><a href="/" aria-label="Home">Home</a></li>
-            <li><a href="/book" aria-label="About">Book</a></li>
-            <li><a href="/testimonial" aria-label="About">Testimonial</a></li>
-            <li><a href="/about" aria-label="Services">About</a></li>
-            <li><a href="/#visit-me" aria-label="Contact">Visit me</a></li>
+            <li><a href="/" aria-label="Go to Home page">Home</a></li>
+            <li><a href="/book" aria-label="Learn about the book">Book</a></li>
             <li>
-              <a href="/#other-development" aria-label="Contact">Passion</a>
+              <a href="/testimonial" aria-label="View testimonials"
+                >Testimonial</a
+              >
+            </li>
+            <li><a href="/about" aria-label="Learn about Paul">About</a></li>
+            <li>
+              <a href="/#visit-me" aria-label="How to visit Paul">Visit Me</a>
+            </li>
+            <li>
+              <a href="/#other-development" aria-label="Paul's passion project"
+                >Passion</a
+              >
             </li>
           </ul>
           <button
@@ -55,41 +99,52 @@
         </nav>
       </header>
       <main class="content no-margin-top" role="main">
-        <section class="hero south-sudan no-padding" aria-label="Hero Section">
+        <section
+          class="hero south-sudan no-padding"
+          aria-labelledby="south-sudan-heading"
+        >
           <div class="hero-text">
             <hgroup>
-              <h1>The South Sudan School Report</h1>
+              <h1 id="south-sudan-heading">The South Sudan School Report</h1>
               <p>life of helping continues across the worlds.</p>
             </hgroup>
-            <div class="swiper">
+            <div
+              class="swiper"
+              aria-label="Photo carousel from South Sudan project"
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
                     src="/images/african-development/teachers-1.jpg"
-                    alt=""
+                    alt="Paul Atanya with teachers in sudan"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="/images/african-development/students-2.jpg"
-                    alt=""
+                    alt="Students lineup in front of the new school"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="/images/african-development/telescope-1.jpg"
-                    alt=""
+                    alt="Paul Atanay setting up a denoted telescope"
                   />
                 </div>
               </div>
 
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev" aria-label="Previous image"></div>
+              <div class="swiper-button-next" aria-label="Next image"></div>
             </div>
           </div>
         </section>
-        <section>
+        <section aria-labelledby="trip-report-heading">
           <div class="text-content fadein-animation no-padding-top">
+            <header>
+              <h2 id="trip-report-heading" class="visually-hidden">
+                Project Overview
+              </h2>
+            </header>
             <p>
               I traveled to South Sudan on the second week of February 2025 to
               distribute sports equipment, telescopes, microscopes, maps, and
@@ -114,12 +169,15 @@
             </p>
           </div>
         </section>
-        <section class="gray-background">
+        <section
+          class="gray-background"
+          aria-label="Teacher challenges section"
+        >
           <div class="two-col-flex">
             <div>
               <img
                 src="/images/african-development/teachers-1.jpg"
-                alt="Paul with teachers"
+                alt="Paul Atanya standing with teachers"
                 class="fadein-animation"
               />
             </div>
@@ -167,16 +225,18 @@
             <div>
               <img
                 src="/images/african-development/teachers-5.jpg"
-                alt="Paul with teachers"
+                alt="Paul meeting with teachers"
                 class="fadein-animation"
               />
             </div>
           </div>
         </section>
-        <section>
+        <section aria-labelledby="bottle-drive-heading">
           <div class="text-content">
             <hgroup class="text-align-center">
-              <h2 class="wavy-underline">BOTTLE DRIVE</h2>
+              <h2 id="bottle-drive-heading" class="wavy-underline">
+                BOTTLE DRIVE
+              </h2>
               <p>Charity work to help the unfortunate.</p>
             </hgroup>
             <p>
@@ -193,15 +253,37 @@
               purchasing my books, with proceeds reinvested into these school
               projects. Together, we can change lives—one bottle, one brick, and
               one classroom at a time.
-              <a href="/#visit-me">Get in touch</a> with me to learn how you can
-              help.
+              <a href="/#visit-me" aria-label="Visit Paul or learn how to help"
+                >Get in touch</a
+              >
+              with me to learn how you can help.
             </p>
           </div>
         </section>
       </main>
-      <footer class="gray-background">
+      <footer class="gray-background site-footer" role="contentinfo">
         <div class="logo" aria-label="Paul Atanya">
-          <span>PAUL</span><span>ATANYA</span>
+          <span>PAUL</span><span>ATANYA</span
+          ><span class="copyright">&copy; 2025 All Rights Reserved</span>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/paulatanya"
+            target="_blank"
+            aria-label="LinkedIn profile of Paul Atanya"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/linkedin.svg" height="32" alt="Linkedin Icon" />
+          </a>
+          <a
+            href="https://x.com/atanya_paul?s=11"
+            height="32"
+            target="_blank"
+            aria-label="Paul Atanya on X (formerly Twitter)"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/x.svg" alt="X formerly Twitter Icon" />
+          </a>
         </div>
       </footer>
     </div>

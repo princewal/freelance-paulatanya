@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   try {
     const swiper = new Swiper(".swiper", {
       loop: true,
-      /* autoplay: {
+      autoplay: {
         delay: 5000,
-      }, */
+      },
       effect: "fade",
       navigation: {
         nextEl: ".swiper-button-next",

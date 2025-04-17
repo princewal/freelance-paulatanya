@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Official site of Paul Atanya, author of 'Destination Canada: Tools for Success for New Canadians'—a guide to help immigrants thrive in Canada."
+    />
+    <meta
+      name="keywords"
+      content="Paul Atanya, Destination Canada, Canadian immigration, New Canadians, Immigrant success, Book for newcomers"
+    />
+    <meta name="author" content="Paul Atanya" />
+    <link rel="canonical" href="https://www.paulatanya.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Destination Canada by Paul Atanya" />
+    <meta
+      property="og:description"
+      content="A must-read for newcomers to Canada. Learn the tools and insights needed to succeed from an experienced advisor."
+    />
+    <meta property="og:image" content="/images/main-book.png" />
+    <meta property="og:url" content="https://www.paulatanya.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Destination Canada by Paul Atanya" />
+    <meta
+      name="twitter:description"
+      content="A practical guide to success for new Canadians by Paul Atanya."
+    />
+    <meta name="twitter:image" content="/images/main-book.png" />
     <title>Paul Atanya</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
@@ -53,10 +80,10 @@
         </nav>
       </header>
       <main class="content" role="main">
-        <section id="home" class="hero" aria-label="Hero Section">
+        <section id="home" class="hero" aria-label="hero-heading">
           <div class="hero-text fadein-animation">
             <hgroup>
-              <h1>Life of Helping</h1>
+              <h1 id="hero-heading">Life of Helping</h1>
               <p>
                 With over 20 years of experience helping new comers to Canada
                 its my life to serve my community and country
@@ -64,17 +91,20 @@
             </hgroup>
           </div>
           <div class="hero-image">
-            <img src="/images/hero-image-1.png" alt="Hero Image" />
+            <img
+              src="/images/hero-image-1.png"
+              alt="Paul Atanya holding up his book with a welcoming smile"
+            />
           </div>
         </section>
-        <section id="book-section">
+        <section id="book-section" aria-labelledby="book-title">
           <div class="two-col-flex main-book">
             <div class="fadein-animation">
               <picture>
                 <img
                   class="main-book-image"
                   src="/images/main-book.png"
-                  alt="Destination Canada: Tools for success."
+                  alt="Cover of Destination Canada: Tools for success."
                 />
               </picture>
             </div>
@@ -92,11 +122,12 @@
                 <div aria-labelledby="book-title subtitle author-name">
                   <p class="synopsis">New comers best friend.</p>
                 </div>
-                <footer>
+                <footer class="no-padding-left">
                   <a
                     href="https://a.co/d/h30Y65M"
                     class="btn btn-arrow"
                     aria-label="Shop Destination Canada by Paul Atanya"
+                    target="_blank"
                   >
                     Shop It Now
                   </a>
@@ -106,32 +137,38 @@
           </div>
         </section>
 
-        <section id="book-story" class="gray-background">
+        <section
+          id="book-story"
+          class="gray-background"
+          aria-labelledby="book-story-heading"
+        >
           <header class="fadein-animation text-align-center">
-            <h2 id="aboutme" class="wavy-underline">
+            <h2 id="book-story-heading" class="wavy-underline">
               THE STORY BEHIND THE BOOK
             </h2>
 
-            <h3 id="about-me-subtitle" class="">
+            <h3 id="about-me-subheading" class="">
               DESTINATION CANADA ORIGIN STORY
             </h3>
           </header>
           <div class="text-content fadein-animation">
-            I wrote this book to dispel misinformation about this great country
-            and to give you the facts to decide whether to immigrate. I wrote it
-            to assist with making an informed choice about leaving your loved
-            ones behind and immigrating to a new country. I have good news for
-            you. Canada is the best country to immigrate to. I have lived in the
-            country for 36 years, am a proud citizen, and am fully integrated in
-            all respects. I love the country, its values, and its ideals.
-            Besides, I am a career advisor and know how to navigate the
-            employment and hiring process.
+            <p>
+              I wrote this book to dispel misinformation about this great
+              country and to give you the facts to decide whether to immigrate.
+              I wrote it to assist with making an informed choice about leaving
+              your loved ones behind and immigrating to a new country. I have
+              good news for you. Canada is the best country to immigrate to. I
+              have lived in the country for 36 years, am a proud citizen, and am
+              fully integrated in all respects. I love the country, its values,
+              and its ideals. Besides, I am a career advisor and know how to
+              navigate the employment and hiring process.
+            </p>
           </div>
           <div class="text-align-center">
             <a
               href="/book"
               class="btn btn-arrow"
-              aria-label="Go to testimonial page"
+              aria-label="Read full origin story of Destination Canada: Tools for Success"
               target="_blank"
             >
               Read Full Story
@@ -139,22 +176,28 @@
           </div>
         </section>
 
-        <section id="testimonial">
+        <section id="testimonial" aria-labelledby="testimonial-heading">
           <header class="fadein-animation text-align-center">
-            <h2 id="aboutme" class="wavy-underline">TESTIMONIAL</h2>
+            <h2 id="testimonial-heading" class="wavy-underline">TESTIMONIAL</h2>
 
-            <h3 id="about-me-subtitle" class="">WHAT PEOPLE SAY</h3>
+            <h3 id="testimonial-subheading" class="">WHAT PEOPLE SAY</h3>
           </header>
           <div class="testimonial-container">
-            <div class="testimonial">
+            <article
+              class="testimonial"
+              aria-label="Testimonial from new immigrant job seeker"
+            >
               <header><h2>New immigrant Job Seeker</h2></header>
               <div>
                 The best thing I have ever done to myself since coming to Canada
                 was to come to the Centre for Newcomers and talk to Paul. I
                 received six interviews and four job offers.”
               </div>
-            </div>
-            <div class="testimonial">
+            </article>
+            <article
+              class="testimonial"
+              aria-label="Testimonial from workshop participant"
+            >
               <header>
                 <h2>Immigrant Job Seeker and Workshop Participant</h2>
               </header>
@@ -162,8 +205,11 @@
                 PAUL ATANYA, KEEP UP THE GOOD WORK!!! PEOPLE NEED People like
                 You!
               </div>
-            </div>
-            <div class="testimonial">
+            </article>
+            <article
+              class="testimonial"
+              aria-label="Testimonial from resume workshop attendee"
+            >
               <header>
                 <h2>
                   Resume Writing workshop participant and new immigrant to
@@ -179,7 +225,7 @@
                   wizard</em
                 >.
               </div>
-            </div>
+            </article>
           </div>
           <div class="text-align-center">
             <a
@@ -191,11 +237,15 @@
             </a>
           </div>
         </section>
-        <section id="about-me" class="text-align-center">
+        <section
+          id="about-me"
+          class="text-align-center"
+          aria-labelledby="about-heading"
+        >
           <header class="fadein-animation">
-            <h2 id="aboutme" class="wavy-underline">ABOUT ME</h2>
+            <h2 id="about-heading" class="wavy-underline">ABOUT ME</h2>
 
-            <h3 id="about-me-subtitle" class="">WHO I AM</h3>
+            <h3 id="about-subheading">WHO I AM</h3>
           </header>
           <div class="text-content fadein-animation">
             <p>
@@ -218,17 +268,21 @@
             <a
               href="/about"
               class="btn btn-arrow"
-              aria-label="Go to testimonial page"
+              aria-label="Read more about Paul Atanya"
             >
               Read More
             </a>
           </div>
         </section>
-        <section id="visit-me" class="text-align-center">
+        <section
+          id="visit-me"
+          class="text-align-center"
+          aria-labelledby="visit-heading"
+        >
           <header class="fadein-animation">
-            <h2 id="aboutme" class="wavy-underline">VISIT ME</h2>
+            <h2 id="visit-heading" class="wavy-underline">VISIT ME</h2>
 
-            <h3 id="about-me-subtitle" class="">
+            <h3 id="visit-subheading" class="">
               MY SERVICES AT THE CENTRE FOR NEWCOMERS
             </h3>
           </header>
@@ -247,17 +301,23 @@
                 </p>
                 <p>
                   Email:
-                  <a href="mailto:info@centrefornewcomers.ca"
-                    >info@centrefornewcomers.ca</a
+                  <a href="mailto:authorpaulatanya@gmail.com"
+                    >authorpaulatanya@gmail.com</a
                   ><br />
-                  Phone: <a href="tel:+1234567890">+1 (403) 569-3325</a>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/paulatanya" target="_blank" aria-label="LinkedIn profile of Paul Atanya" rel="noopener noreferrer">
+                      <img src="/images/linkedin.svg" height="32" alt="Linkedin Icon">
+                    </a>
+                    <a href="https://x.com/atanya_paul?s=11" height="32" target="_blank"  aria-label="Paul Atanya on X (formerly Twitter)" rel="noopener noreferrer">
+                      <img src="/images/x.svg" alt="X formerly Twitter Icon">
+                    </a>
+                  </div>
+                  
                 </p>
-                <p>Office Hours:</p>
                 <p class="no-padding-top">
+                  Office Hours:<br />
                   Mon,Tue, Thu,Fri: <time datetime="08:30">8:30 AM</time> -
-                  <time datetime="16:30">4:30 PM</time>
-                </p>
-                <p class="no-padding-top">
+                  <time datetime="16:30">4:30 PM</time><br />
                   Wed: <time datetime="8:30">8:30 AM</time> -
                   <time datetime="21:00">9:00 PM</time>
                 </p>
@@ -269,30 +329,43 @@
         <section
           id="other-development"
           class="text-align-center fadein-animation"
+          aria-labelledby="passion-heading"
         >
           <header class="fadein-animation">
-            <h2 id="aboutme" class="wavy-underline">PASSION PROJECT</h2>
+            <h2 id="passion-heading" class="wavy-underline">PASSION PROJECT</h2>
 
-            <h3 id="about-me-subtitle" class="">AFRICAN DEVELOPMENT</h3>
+            <h3 id="passion-subheading" class="">AFRICAN DEVELOPMENT</h3>
           </header>
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="/images/african-development/village.jpg" alt="" />
+                <img
+                  src="/images/african-development/village.jpg"
+                  alt="South Sudan completed school project"
+                />
               </div>
               <div class="swiper-slide">
-                <img src="/images/african-development/village-2.jpg" alt="" />
+                <img
+                  src="/images/african-development/village-2.jpg"
+                  alt="Old school"
+                />
               </div>
               <div class="swiper-slide">
-                <img src="/images/african-development/students-3.jpg" alt="" />
+                <img
+                  src="/images/african-development/students-3.jpg"
+                  alt="Kids in the new school learning"
+                />
               </div>
               <div class="swiper-slide">
-                <img src="/images/african-development/school.jpg" alt="" />
+                <img
+                  src="/images/african-development/school.jpg"
+                  alt="Another picture of the new school building"
+                />
               </div>
             </div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" aria-label="Previous slide"></div>
+            <div class="swiper-button-next" aria-label="Next slide"></div>
           </div>
           <div class="text-content">
             <p>
@@ -305,10 +378,18 @@
           </div>
         </section>
       </main>
-      <footer class="gray-background">
+      <footer class="gray-background site-footer" role="contentinfo">
         <div class="logo" aria-label="Paul Atanya">
-          <span>PAUL</span><span>ATANYA</span>
+          <span>PAUL</span><span>ATANYA</span><span class="copyright">&copy; 2025 All Rights Reserved</span>
         </div>
+        <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/paulatanya" target="_blank" aria-label="LinkedIn profile of Paul Atanya" rel="noopener noreferrer">
+                      <img src="/images/linkedin.svg" height="32" alt="Linkedin Icon">
+                    </a>
+                    <a href="https://x.com/atanya_paul?s=11" target="_blank"  aria-label="Paul Atanya on X (formerly Twitter)" rel="noopener noreferrer">
+                      <img src="/images/x.svg" height="32" alt="X formerly Twitter Icon">
+                    </a>
+                  </div>
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
